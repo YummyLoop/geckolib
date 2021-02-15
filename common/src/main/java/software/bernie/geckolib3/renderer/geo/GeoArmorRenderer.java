@@ -1,5 +1,6 @@
 package software.bernie.geckolib3.renderer.geo;
 
+import me.shedaniel.architectury.platform.Platform;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
@@ -124,7 +125,7 @@ public abstract class GeoArmorRenderer<T extends ArmorItem & IAnimatable> extend
 		render(model, currentArmorItem, partialTicks, renderType, stack, null, bufferIn, packedLightIn,
 				OverlayTexture.DEFAULT_UV, (float) renderColor.getRed() / 255f, (float) renderColor.getGreen() / 255f,
 				(float) renderColor.getBlue() / 255f, (float) renderColor.getAlpha() / 255);
-		if (ModCompat.isPatchouliLoaded()) {
+		if (Platform.isModLoaded("patchouli")) {
 			ModCompat.iniPatchouli(stack);
 		}
 		stack.pop();
