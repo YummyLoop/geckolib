@@ -7,10 +7,8 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.Identifier;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import software.bernie.geckolib3.ArmorProvider;
 import software.bernie.geckolib3.renderer.geo.GeoArmorRenderer;
 
 public abstract class GeoArmorItem extends ArmorItem {
