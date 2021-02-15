@@ -7,8 +7,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public interface ArmorProvider {
-	BipedEntityModel<LivingEntity> getArmorModel(LivingEntity entity, ItemStack stack, EquipmentSlot slot,
-			BipedEntityModel<LivingEntity> defaultModel);
+	BipedEntityModel<LivingEntity> getArmorModelA(LivingEntity entity, ItemStack stack, EquipmentSlot slot,
+												  BipedEntityModel<LivingEntity> defaultModel);
 
-	Identifier getArmorTexture(LivingEntity entity, ItemStack stack, EquipmentSlot slot, Identifier defaultTexture);
+	Identifier getArmorTextureA(LivingEntity entity, ItemStack stack, EquipmentSlot slot, Identifier defaultTexture);
 }

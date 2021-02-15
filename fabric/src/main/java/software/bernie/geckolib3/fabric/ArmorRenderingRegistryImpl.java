@@ -23,7 +23,7 @@ public final class ArmorRenderingRegistryImpl {
 				return provider.getArmorModel(entity, stack, slot, defaultModel);
 			}
 			if (stack.getItem() instanceof ArmorProvider) {
-				return ((ArmorProvider) stack.getItem()).getArmorModel(entity, stack, slot, defaultModel);
+				return ((ArmorProvider) stack.getItem()).getArmorModelA(entity, stack, slot, defaultModel);
 			}
 		}
 
@@ -40,7 +40,7 @@ public final class ArmorRenderingRegistryImpl {
 				return provider.getArmorTexture(entity, stack, slot, secondLayer, suffix, defaultTexture);
 			}
 			if (stack.getItem() instanceof ArmorProvider) {
-				return ((ArmorProvider) stack.getItem()).getArmorTexture(entity, stack, slot, defaultTexture);
+				return ((ArmorProvider) stack.getItem()).getArmorTextureA(entity, stack, slot, defaultTexture);
 			}
 		}
 
