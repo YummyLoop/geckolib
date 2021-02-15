@@ -24,7 +24,7 @@ import software.bernie.example.registry.BlockRegistry;
 import software.bernie.example.registry.EntityRegistry;
 import software.bernie.example.registry.ItemRegistry;
 import software.bernie.example.registry.TileRegistry;
-import software.bernie.geckolib3.fabric.renderer.geo.GeoArmorRenderer;
+import software.bernie.geckolib3.renderer.geo.GeoArmorRenderer;
 import software.bernie.geckolib3.fabric.renderer.geo.GeoItemRenderer;
 
 public class ClientListener implements ClientModInitializer {

@@ -1,6 +1,5 @@
-package software.bernie.geckolib3.fabric.renderer.geo;
+package software.bernie.geckolib3.renderer.geo;
 
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
@@ -13,10 +12,9 @@ import net.minecraft.entity.decoration.ArmorStandEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
-import software.bernie.geckolib3.fabric.compat.PatchouliCompat;
+import software.bernie.geckolib3.ModCompat;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
-import software.bernie.geckolib3.renderer.geo.IGeoRenderer;
 import software.bernie.geckolib3.util.GeoUtils;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.controller.AnimationController;
@@ -126,8 +124,8 @@ public abstract class GeoArmorRenderer<T extends ArmorItem & IAnimatable> extend
 		render(model, currentArmorItem, partialTicks, renderType, stack, null, bufferIn, packedLightIn,
 				OverlayTexture.DEFAULT_UV, (float) renderColor.getRed() / 255f, (float) renderColor.getGreen() / 255f,
 				(float) renderColor.getBlue() / 255f, (float) renderColor.getAlpha() / 255);
-		if (FabricLoader.getInstance().isModLoaded("patchouli")) {
-			PatchouliCompat.patchouliLoaded(stack);
+		if (ModCompat.isPatchouliLoaded()) {
+			ModCompat.iniPatchouli(stack);
 		}
 		stack.pop();
 		stack.scale(-1.0F, -1.0F, 1.0F);

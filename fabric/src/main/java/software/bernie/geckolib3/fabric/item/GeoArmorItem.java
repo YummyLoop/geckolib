@@ -10,7 +10,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.ArmorProvider;
-import software.bernie.geckolib3.fabric.renderer.geo.GeoArmorRenderer;
+import software.bernie.geckolib3.renderer.geo.GeoArmorRenderer;
 
 public abstract class GeoArmorItem extends ArmorItem implements ArmorProvider {
 	public GeoArmorItem(ArmorMaterial materialIn, EquipmentSlot slot, Settings builder) {

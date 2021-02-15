@@ -1,0 +1,16 @@
+package software.bernie.geckolib3.fabric;
+
+import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.client.util.math.MatrixStack;
+import software.bernie.geckolib3.fabric.compat.PatchouliCompat;
+
+public class ModCompatImpl {
+
+    public static boolean isPatchouliLoaded(){
+        return FabricLoader.getInstance().isModLoaded("patchouli");
+    }
+
+    public static void iniPatchouli(MatrixStack stack){
+        PatchouliCompat.patchouliLoaded(stack);
+    }
+}
