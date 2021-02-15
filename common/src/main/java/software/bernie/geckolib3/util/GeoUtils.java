@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.util;
+package software.bernie.geckolib3.util;
 
 import net.minecraft.client.model.ModelPart;
 import software.bernie.geckolib3.core.processor.IBone;

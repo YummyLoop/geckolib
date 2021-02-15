@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.util;
+package software.bernie.geckolib3.util;
 
 import net.minecraft.client.util.math.Vector3d;
 import net.minecraft.client.util.math.Vector3f;

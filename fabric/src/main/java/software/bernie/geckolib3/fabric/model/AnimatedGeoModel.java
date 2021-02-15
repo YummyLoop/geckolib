@@ -21,7 +21,7 @@ import software.bernie.geckolib3.geo.exception.GeoModelException;
 import software.bernie.geckolib3.fabric.geo.render.built.GeoBone;
 import software.bernie.geckolib3.fabric.geo.render.built.GeoModel;
 import software.bernie.geckolib3.fabric.resource.GeckoLibCache;
-import software.bernie.geckolib3.fabric.util.MolangUtils;
+import software.bernie.geckolib3.util.MolangUtils;
 
 import java.util.Collections;
 

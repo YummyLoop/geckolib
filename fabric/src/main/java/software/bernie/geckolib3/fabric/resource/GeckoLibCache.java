@@ -17,7 +17,7 @@ import software.bernie.geckolib3.file.AnimationFile;
 import software.bernie.geckolib3.fabric.file.AnimationFileLoader;
 import software.bernie.geckolib3.fabric.file.GeoModelLoader;
 import software.bernie.geckolib3.fabric.geo.render.built.GeoModel;
-import software.bernie.geckolib3.fabric.molang.MolangRegistrar;
+import software.bernie.geckolib3.molang.MolangRegistrar;
 
 public class GeckoLibCache {
 	private ConcurrentHashMap<Identifier, AnimationFile> animations = new ConcurrentHashMap<>();

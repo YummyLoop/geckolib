@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.geo.raw.tree;
+package software.bernie.geckolib3.geo.raw.tree;
 
 import software.bernie.geckolib3.geo.raw.pojo.Bone;
 import software.bernie.geckolib3.geo.raw.pojo.MinecraftGeometry;
@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class RawGeometryTree {
-	public HashMap<String, software.bernie.geckolib3.fabric.geo.raw.tree.RawBoneGroup> topLevelBones = new HashMap<>();
+	public HashMap<String, RawBoneGroup> topLevelBones = new HashMap<>();
 	public ModelProperties properties;
 
 	public static RawGeometryTree parseHierarchy(RawGeoModel model) {
@@ -25,12 +25,12 @@ public class RawGeometryTree {
 		while (true) {
 			Bone bone = bones.get(index);
 			if (!hasParent(bone)) {
-				hierarchy.topLevelBones.put(bone.getName(), new software.bernie.geckolib3.fabric.geo.raw.tree.RawBoneGroup(bone));
+				hierarchy.topLevelBones.put(bone.getName(), new RawBoneGroup(bone));
 				bones.remove(bone);
 			} else {
-				software.bernie.geckolib3.fabric.geo.raw.tree.RawBoneGroup groupFromHierarchy = getGroupFromHierarchy(hierarchy, bone.getParent());
+				RawBoneGroup groupFromHierarchy = getGroupFromHierarchy(hierarchy, bone.getParent());
 				if (groupFromHierarchy != null) {
-					groupFromHierarchy.children.put(bone.getName(), new software.bernie.geckolib3.fabric.geo.raw.tree.RawBoneGroup(bone));
+					groupFromHierarchy.children.put(bone.getName(), new RawBoneGroup(bone));
 					bones.remove(bone);
 				}
 			}
@@ -51,16 +51,16 @@ public class RawGeometryTree {
 		return bone.getParent() != null;
 	}
 
-	public static software.bernie.geckolib3.fabric.geo.raw.tree.RawBoneGroup getGroupFromHierarchy(RawGeometryTree hierarchy, String bone) {
-		HashMap<String, software.bernie.geckolib3.fabric.geo.raw.tree.RawBoneGroup> flatList = new HashMap<>();
-		for (software.bernie.geckolib3.fabric.geo.raw.tree.RawBoneGroup group : hierarchy.topLevelBones.values()) {
+	public static RawBoneGroup getGroupFromHierarchy(RawGeometryTree hierarchy, String bone) {
+		HashMap<String, RawBoneGroup> flatList = new HashMap<>();
+		for (RawBoneGroup group : hierarchy.topLevelBones.values()) {
 			flatList.put(group.selfBone.getName(), group);
 			traverse(flatList, group);
 		}
 		return flatList.get(bone);
 	}
 
-	public static void traverse(HashMap<String, software.bernie.geckolib3.fabric.geo.raw.tree.RawBoneGroup> flatList, software.bernie.geckolib3.fabric.geo.raw.tree.RawBoneGroup group) {
+	public static void traverse(HashMap<String, RawBoneGroup> flatList, RawBoneGroup group) {
 		for (RawBoneGroup child : group.children.values()) {
 			flatList.put(child.selfBone.getName(), child);
 			traverse(flatList, child);

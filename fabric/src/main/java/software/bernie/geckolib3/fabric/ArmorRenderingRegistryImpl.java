@@ -8,6 +8,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib3.ArmorProvider;
 
 public final class ArmorRenderingRegistryImpl {
 	private ArmorRenderingRegistryImpl() {

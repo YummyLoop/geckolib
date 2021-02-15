@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.util;
+package software.bernie.geckolib3.util;
 
 public class MolangUtils {
 	public static float normalizeTime(long timestamp) {

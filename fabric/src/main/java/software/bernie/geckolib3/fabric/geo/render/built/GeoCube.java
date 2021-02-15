@@ -4,7 +4,7 @@ import net.minecraft.client.util.math.Vector3d;
 import net.minecraft.client.util.math.Vector3f;
 import net.minecraft.util.math.Direction;
 import software.bernie.geckolib3.geo.raw.pojo.*;
-import software.bernie.geckolib3.fabric.util.VectorUtils;
+import software.bernie.geckolib3.util.VectorUtils;
 
 public class GeoCube {
 	public GeoQuad[] quads = new GeoQuad[6];

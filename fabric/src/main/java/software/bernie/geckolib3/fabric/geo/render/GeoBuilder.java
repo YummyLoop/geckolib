@@ -5,12 +5,12 @@ import org.apache.commons.lang3.ArrayUtils;
 import software.bernie.geckolib3.geo.raw.pojo.Bone;
 import software.bernie.geckolib3.geo.raw.pojo.Cube;
 import software.bernie.geckolib3.geo.raw.pojo.ModelProperties;
-import software.bernie.geckolib3.fabric.geo.raw.tree.RawBoneGroup;
-import software.bernie.geckolib3.fabric.geo.raw.tree.RawGeometryTree;
+import software.bernie.geckolib3.geo.raw.tree.RawBoneGroup;
+import software.bernie.geckolib3.geo.raw.tree.RawGeometryTree;
 import software.bernie.geckolib3.fabric.geo.render.built.GeoBone;
 import software.bernie.geckolib3.fabric.geo.render.built.GeoCube;
 import software.bernie.geckolib3.fabric.geo.render.built.GeoModel;
-import software.bernie.geckolib3.fabric.util.VectorUtils;
+import software.bernie.geckolib3.util.VectorUtils;
 
 public class GeoBuilder {
 	public static GeoModel constructGeoModel(RawGeometryTree geometryTree) {

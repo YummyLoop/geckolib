@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.util;
+package software.bernie.geckolib3.util;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.util;
+package software.bernie.geckolib3.util;
 
 import net.minecraft.item.ItemStack;
 import software.bernie.geckolib3.core.controller.AnimationController;

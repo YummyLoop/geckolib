@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.molang;
+package software.bernie.geckolib3.molang;
 
 import com.eliotlash.mclib.math.Variable;
 import com.eliotlash.molang.MolangParser;

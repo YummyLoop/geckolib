@@ -7,7 +7,7 @@ import software.bernie.geckolib3.geo.exception.GeoModelException;
 import software.bernie.geckolib3.geo.raw.pojo.Converter;
 import software.bernie.geckolib3.geo.raw.pojo.FormatVersion;
 import software.bernie.geckolib3.geo.raw.pojo.RawGeoModel;
-import software.bernie.geckolib3.fabric.geo.raw.tree.RawGeometryTree;
+import software.bernie.geckolib3.geo.raw.tree.RawGeometryTree;
 import software.bernie.geckolib3.fabric.geo.render.GeoBuilder;
 import software.bernie.geckolib3.fabric.geo.render.built.GeoModel;
 

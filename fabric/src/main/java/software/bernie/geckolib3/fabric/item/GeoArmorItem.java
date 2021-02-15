@@ -9,7 +9,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
-import software.bernie.geckolib3.fabric.ArmorProvider;
+import software.bernie.geckolib3.ArmorProvider;
 import software.bernie.geckolib3.fabric.renderer.geo.GeoArmorRenderer;
 
 public abstract class GeoArmorItem extends ArmorItem implements ArmorProvider {

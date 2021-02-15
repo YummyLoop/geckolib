@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.geo.raw.tree;
+package software.bernie.geckolib3.geo.raw.tree;
 
 import software.bernie.geckolib3.geo.raw.pojo.Bone;
 
