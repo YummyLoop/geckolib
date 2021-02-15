@@ -18,6 +18,7 @@ out
 .idea
 
 # gradle
+.build
 build
 .gradle
 logs

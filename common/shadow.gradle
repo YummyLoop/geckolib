@@ -1,8 +1,8 @@
 // Documentation: https://imperceptiblethoughts.com/shadow/
-def skip = true // Disable this file
+def skip = false // Disable this file
 def shadowList =
         [   // 0MavenRepo, 1PackageName, 2Version, 3Relocate(true/false)
-            ['Maven.Repo', 'PackageName', 'Version', false]
+            ['software.bernie.geckolib', 'geckolib-core', "${rootProject.geckolib_core_version}", false]
         ]
 
 dependencies {

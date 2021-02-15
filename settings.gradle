@@ -11,6 +11,7 @@ pluginManagement {
         id "architectury-plugin" version architectury_plugin_version
         id "forgified-fabric-loom" version forgified_fabric_loom_version
         id "com.github.johnrengelman.shadow" version shadow_version
+        id 'com.matthewprenger.cursegradle' version cursegradle_version
     }
 }
 
