@@ -7,6 +7,9 @@ bin
 .project
 mcmodsrepo
 
+#vscode
+.vscode
+
 # idea
 out
 *.ipr
@@ -23,5 +26,4 @@ eclipse
 run
 
 # Files from Forge MDK
-forge*changelog.txt
 build.bat

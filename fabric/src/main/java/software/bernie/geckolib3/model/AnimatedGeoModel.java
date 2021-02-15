@@ -146,7 +146,7 @@ public abstract class AnimatedGeoModel<T extends IAnimatable> extends GeoModelPr
 	}
 
 	@Override
-	public double getCurrentTick() {
-		return GlfwUtil.getTime() * 20;
+	public float getCurrentTick() {
+		return (float) (GlfwUtil.getTime() * 20);
 	}
 }

@@ -1,0 +1,11 @@
+// Repositories of common, fabric and forge dependencies
+repositories {
+    mavenCentral()
+    maven { url "https://maven.shedaniel.me/" }
+    maven { url "https://maven.terraformersmc.com/releases" }
+    maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
+    maven { url 'https://repo.repsy.io/mvn/fadookie/particleman' }
+    maven { url 'https://maven.blamejared.com' }
+    maven { url 'https://www.cursemaven.com' }
+    maven { url 'https://plugins.gradle.org/m2/' }
+}

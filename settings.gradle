@@ -1,14 +1,21 @@
 pluginManagement {
     repositories {
         jcenter()
-        maven {
-            name = 'Fabric'
-            url = 'https://maven.fabricmc.net/'
-        }
+        maven { url "https://maven.fabricmc.net/" }
+        maven { url "https://maven.shedaniel.me/" }
+        maven { url "https://files.minecraftforge.net/maven/" }
         gradlePluginPortal()
         mavenCentral()
     }
+    plugins {
+        id "architectury-plugin" version architectury_plugin_version
+        id "forgified-fabric-loom" version forgified_fabric_loom_version
+        id "com.github.johnrengelman.shadow" version shadow_version
+    }
 }
+
+include("common")
+include("fabric")
+include("forge")
+
 rootProject.name = 'gecholib'
-include ':geckolib-core'
-project(':geckolib-core').projectDir = new File('./core')
