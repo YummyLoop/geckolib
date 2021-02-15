@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Matrix3f;
 import net.minecraft.util.math.Matrix4f;
 import software.bernie.geckolib3.fabric.model.provider.GeoModelProvider;
-import software.bernie.geckolib3.fabric.util.RenderUtils;
+import software.bernie.geckolib3.util.RenderUtils;
 import software.bernie.geckolib3.geo.render.built.*;
 
 import java.awt.*;
