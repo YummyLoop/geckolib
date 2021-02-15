@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.item;
+package software.bernie.geckolib3.item;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -17,7 +17,7 @@ public abstract class GeoArmorItem extends ArmorItem implements ArmorProvider {
 		super(materialIn, slot, builder);
 	}
 
-	@Environment(EnvType.CLIENT)
+	@Environment(EnvType.CLIENT) //TODO: Check if this works in forge
 	public BipedEntityModel<LivingEntity> getArmorModel(LivingEntity entityLiving, ItemStack itemStack,
 			EquipmentSlot armorSlot, BipedEntityModel<LivingEntity> _default) {
 		Class<? extends ArmorItem> clazz = this.getClass();
