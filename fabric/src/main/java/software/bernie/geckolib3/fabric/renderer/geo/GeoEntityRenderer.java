@@ -31,7 +31,7 @@ import software.bernie.geckolib3.fabric.compat.PatchouliCompat;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.fabric.model.AnimatedGeoModel;
 import software.bernie.geckolib3.fabric.model.provider.GeoModelProvider;
-import software.bernie.geckolib3.fabric.model.provider.data.EntityModelData;
+import software.bernie.geckolib3.model.provider.data.EntityModelData;
 import software.bernie.geckolib3.fabric.util.AnimationUtils;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.IAnimatableModel;

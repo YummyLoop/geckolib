@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.model.provider;
+package software.bernie.geckolib3.model.provider;
 
 import net.minecraft.util.Identifier;
 

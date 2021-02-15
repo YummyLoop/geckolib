@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.model.provider.data;
+package software.bernie.geckolib3.model.provider.data;
 
 public class EntityModelData {
 	public boolean isSitting;

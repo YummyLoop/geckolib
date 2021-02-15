@@ -29,7 +29,7 @@ import net.minecraft.util.math.MathHelper;
 import software.bernie.geckolib3.fabric.compat.PatchouliCompat;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.fabric.model.AnimatedGeoModel;
-import software.bernie.geckolib3.fabric.model.provider.data.EntityModelData;
+import software.bernie.geckolib3.model.provider.data.EntityModelData;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.IAnimatableModel;
 import software.bernie.geckolib3.core.controller.AnimationController;
