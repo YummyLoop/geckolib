@@ -24,10 +24,10 @@ dependencies {
     modCompile "me.shedaniel:architectury:${rootProject.architectury_version}:fabric"
 
     // Actual dependencies
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.0'
-    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.9.0'
-    compile 'com.eliotlash.molang:molang:SNAPSHOT.12'
-    compile 'com.eliotlash.mclib:mclib:SNAPSHOT.12'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.0'
+    implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.9.0'
+    implementation 'com.eliotlash.molang:molang:SNAPSHOT.12'
+    implementation 'com.eliotlash.mclib:mclib:SNAPSHOT.12'
 
     // Shaded dependencies
     shadow group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.0'

@@ -24,6 +24,7 @@ public class GeckoLib {
 	public static boolean hasInitialized;
 
 	public static void initialize() {
+		GeckoLibCommon.init();
 		if (!hasInitialized) {
 			ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES)
 					.registerReloadListener(new IdentifiableResourceReloadListener() {

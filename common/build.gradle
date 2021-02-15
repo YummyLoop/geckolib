@@ -1,4 +1,9 @@
+plugins {
+    id 'com.github.johnrengelman.shadow'
+}
+
 apply from: "${rootDir}/repositories.gradle"
+apply from: "${rootProject.project("common").projectDir}/shadow.gradle"
 
 dependencies {
     // Remove the next line if you don't want to depend on the API
@@ -8,6 +13,8 @@ dependencies {
     // Do NOT use other classes from fabric loader
     modCompile "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
 
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.0'
+    implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.9.0'
     // Extra dependencies
     //modApi "software.bernie.geckolib:geckolib-core:1.0.4"
 
