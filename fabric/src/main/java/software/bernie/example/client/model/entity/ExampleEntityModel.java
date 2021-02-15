@@ -2,7 +2,7 @@ package software.bernie.example.client.model.entity;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.Identifier;
-import software.bernie.geckolib3.fabric.GeckoLib;
+import software.bernie.geckolib3.GeckoLibCommon;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.processor.IBone;
@@ -12,17 +12,17 @@ import software.bernie.geckolib3.model.provider.data.EntityModelData;
 public class ExampleEntityModel extends AnimatedGeoModel {
 	@Override
 	public Identifier getAnimationFileLocation(Object entity) {
-		return new Identifier(GeckoLib.ModID, "animations/bat.animation.json");
+		return new Identifier(GeckoLibCommon.ModID, "animations/bat.animation.json");
 	}
 
 	@Override
 	public Identifier getModelLocation(Object entity) {
-		return new Identifier(GeckoLib.ModID, "geo/bat.geo.json");
+		return new Identifier(GeckoLibCommon.ModID, "geo/bat.geo.json");
 	}
 
 	@Override
 	public Identifier getTextureLocation(Object entity) {
-		return new Identifier(GeckoLib.ModID, "textures/model/entity/bat.png");
+		return new Identifier(GeckoLibCommon.ModID, "textures/model/entity/bat.png");
 	}
 
 	@Override

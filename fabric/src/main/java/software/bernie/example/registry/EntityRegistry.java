@@ -13,7 +13,7 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.util.Identifier;
 import software.bernie.example.entity.BikeEntity;
 import software.bernie.example.entity.GeoExampleEntity;
-import software.bernie.geckolib3.fabric.GeckoLib;
+import software.bernie.geckolib3.GeckoLibCommon;
 
 public class EntityRegistry {
 	public static final EntityType<GeoExampleEntity> GEO_EXAMPLE_ENTITY = buildEntity(GeoExampleEntity::new,
@@ -24,7 +24,7 @@ public class EntityRegistry {
 			float width, float height) {
 		if (FabricLoader.INSTANCE.isDevelopmentEnvironment()) {
 			String name = entityClass.getSimpleName().toLowerCase();
-			return EntityRegistryBuilder.<T>createBuilder(new Identifier(GeckoLib.ModID, name)).entity(entity)
+			return EntityRegistryBuilder.<T>createBuilder(new Identifier(GeckoLibCommon.ModID, name)).entity(entity)
 					.category(SpawnGroup.CREATURE).dimensions(EntityDimensions.changing(width, height)).build();
 		}
 		return null;

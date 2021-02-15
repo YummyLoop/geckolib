@@ -14,7 +14,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.registry.Registry;
-import software.bernie.geckolib3.fabric.GeckoLib;
+import software.bernie.geckolib3.GeckoLibCommon;
 
 public class RegistryUtils {
 
@@ -23,11 +23,11 @@ public class RegistryUtils {
 	}
 
 	public static <B extends Block> B register(String name, B block) {
-		return register(block, new Identifier(GeckoLib.ModID, name), ItemGroup.DECORATIONS);
+		return register(block, new Identifier(GeckoLibCommon.ModID, name), ItemGroup.DECORATIONS);
 	}
 
 	public static <B extends Block> B register(String name, B block, ItemGroup itemGroup) {
-		return register(block, new Identifier(GeckoLib.ModID, name), itemGroup);
+		return register(block, new Identifier(GeckoLibCommon.ModID, name), itemGroup);
 	}
 
 	public static <B extends Block> B register(B block, Identifier name, ItemGroup itemGroup) {
@@ -49,7 +49,7 @@ public class RegistryUtils {
 
 	public static <B extends Block> B registerBlockWithoutItem(String name, B block) {
 		if (FabricLoader.INSTANCE.isDevelopmentEnvironment()) {
-			Registry.register(Registry.BLOCK, new Identifier(GeckoLib.ModID, name), block);
+			Registry.register(Registry.BLOCK, new Identifier(GeckoLibCommon.ModID, name), block);
 		}
 		return block;
 	}
@@ -63,7 +63,7 @@ public class RegistryUtils {
 
 	public static <I extends Item> I registerItem(String name, I item) {
 		if (FabricLoader.INSTANCE.isDevelopmentEnvironment()) {
-			return Registry.register(Registry.ITEM, new Identifier(GeckoLib.ModID, name), item);
+			return Registry.register(Registry.ITEM, new Identifier(GeckoLibCommon.ModID, name), item);
 		}
 		return null;
 	}
@@ -78,7 +78,7 @@ public class RegistryUtils {
 	public static <T extends BlockEntity> BlockEntityType<T> registerBlockEntity(String name, Builder<T> builder) {
 		if (FabricLoader.INSTANCE.isDevelopmentEnvironment()) {
 			BlockEntityType<T> blockEntityType = builder.build(null);
-			Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(GeckoLib.ModID, name), blockEntityType);
+			Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(GeckoLibCommon.ModID, name), blockEntityType);
 			return blockEntityType;
 		}
 		return null;
@@ -99,7 +99,7 @@ public class RegistryUtils {
 		return register(
 				new PillarBlock(AbstractBlock.Settings.of(Material.WOOD, (blockState) -> materialColor).strength(1.0F)
 						.sounds(BlockSoundGroup.NETHER_STEM)),
-				new Identifier(GeckoLib.ModID, name), ItemGroup.BUILDING_BLOCKS);
+				new Identifier(GeckoLibCommon.ModID, name), ItemGroup.BUILDING_BLOCKS);
 	}
 
 	public static Block registerLog(String name, MaterialColor materialColor, MaterialColor materialColor2) {
@@ -108,7 +108,7 @@ public class RegistryUtils {
 						(blockState) -> blockState.get(PillarBlock.AXIS) == Direction.Axis.Y ? materialColor
 								: materialColor2)
 						.strength(2.0F).sounds(BlockSoundGroup.WOOD)),
-				new Identifier(GeckoLib.ModID, name));
+				new Identifier(GeckoLibCommon.ModID, name));
 	}
 
 }

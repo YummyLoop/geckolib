@@ -17,9 +17,7 @@ import software.bernie.geckolib3.fabric.resource.GeckoLibCache;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
-public class GeckoLib {
-	public static final String ModID = "geckolib3";
-
+public class GeckoLibFabric {
 	public static void initialize() {
 		GeckoLibCommon.init();
 		if (!GeckoLibCommon.hasInitialized) {
@@ -27,7 +25,7 @@ public class GeckoLib {
 					.registerReloadListener(new IdentifiableResourceReloadListener() {
 						@Override
 						public Identifier getFabricId() {
-							return new Identifier(GeckoLib.ModID, "models");
+							return new Identifier(GeckoLibCommon.ModID, "models");
 						}
 
 						@Override
