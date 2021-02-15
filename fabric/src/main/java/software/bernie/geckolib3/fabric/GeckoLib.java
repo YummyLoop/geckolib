@@ -19,11 +19,10 @@ import java.util.concurrent.Executor;
 
 public class GeckoLib {
 	public static final String ModID = "geckolib3";
-	public static boolean hasInitialized;
 
 	public static void initialize() {
 		GeckoLibCommon.init();
-		if (!hasInitialized) {
+		if (!GeckoLibCommon.hasInitialized) {
 			ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES)
 					.registerReloadListener(new IdentifiableResourceReloadListener() {
 						@Override
@@ -40,6 +39,6 @@ public class GeckoLib {
 						}
 					});
 		}
-		hasInitialized = true;
+		GeckoLibCommon.hasInitialized = true;
 	}
 }

@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 public class GeckoLibCommon {
     public static final String MOD_ID = "geckolib3";
     public static final Logger LOGGER = LogManager.getLogger();
+    public static boolean hasInitialized;
 
     public static void init() {}
 

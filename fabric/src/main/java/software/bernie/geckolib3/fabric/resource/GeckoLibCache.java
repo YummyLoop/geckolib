@@ -1,23 +1,21 @@
 package software.bernie.geckolib3.fabric.resource;
 
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.Executor;
-
-import org.apache.commons.lang3.ArrayUtils;
-
 import com.eliotlash.molang.MolangParser;
-
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.resource.ResourceReloadListener;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
-import software.bernie.geckolib3.fabric.GeckoLib;
-import software.bernie.geckolib3.file.AnimationFile;
+import org.apache.commons.lang3.ArrayUtils;
+import software.bernie.geckolib3.GeckoLibCommon;
 import software.bernie.geckolib3.fabric.file.AnimationFileLoader;
 import software.bernie.geckolib3.fabric.file.GeoModelLoader;
+import software.bernie.geckolib3.file.AnimationFile;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.molang.MolangRegistrar;
+
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.Executor;
 
 public class GeckoLibCache {
 	private ConcurrentHashMap<Identifier, AnimationFile> animations = new ConcurrentHashMap<>();
@@ -28,14 +26,14 @@ public class GeckoLibCache {
 	private final GeoModelLoader modelLoader;
 
 	public ConcurrentHashMap<Identifier, AnimationFile> getAnimations() {
-		if (!GeckoLib.hasInitialized) {
+		if (!GeckoLibCommon.hasInitialized) {
 			throw new RuntimeException("GeckoLib was never initialized! Please read the documentation!");
 		}
 		return animations;
 	}
 
 	public ConcurrentHashMap<Identifier, GeoModel> getGeoModels() {
-		if (!GeckoLib.hasInitialized) {
+		if (!GeckoLibCommon.hasInitialized) {
 			throw new RuntimeException("GeckoLib was never initialized! Please read the documentation!");
 		}
 		return geoModels;
