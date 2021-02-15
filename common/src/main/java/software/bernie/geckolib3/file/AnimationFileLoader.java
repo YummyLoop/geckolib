@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.file;
+package software.bernie.geckolib3.file;
 
 import com.eliotlash.molang.MolangParser;
 import com.google.gson.Gson;
@@ -11,8 +11,7 @@ import net.minecraft.util.JsonHelper;
 import org.apache.commons.io.IOUtils;
 import software.bernie.geckolib3.GeckoLibCommon;
 import software.bernie.geckolib3.core.builder.Animation;
-import software.bernie.geckolib3.fabric.util.json.JsonAnimationUtils;
-import software.bernie.geckolib3.file.AnimationFile;
+import software.bernie.geckolib3.util.json.JsonAnimationUtils;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;

@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.resource;
+package software.bernie.geckolib3.resource;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.resource.ReloadableResourceManager;

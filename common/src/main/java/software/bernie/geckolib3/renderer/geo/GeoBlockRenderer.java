@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.renderer.geo;
+package software.bernie.geckolib3.renderer.geo;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FacingBlock;
@@ -15,7 +15,7 @@ import net.minecraft.client.util.math.Vector3f;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
-import software.bernie.geckolib3.fabric.model.AnimatedGeoModel;
+import software.bernie.geckolib3.model.AnimatedGeoModel;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.controller.AnimationController;
 

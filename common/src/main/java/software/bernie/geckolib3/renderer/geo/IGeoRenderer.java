@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.renderer.geo;
+package software.bernie.geckolib3.renderer.geo;
 
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
@@ -9,7 +9,7 @@ import net.minecraft.client.util.math.Vector4f;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Matrix3f;
 import net.minecraft.util.math.Matrix4f;
-import software.bernie.geckolib3.fabric.model.provider.GeoModelProvider;
+import software.bernie.geckolib3.model.provider.GeoModelProvider;
 import software.bernie.geckolib3.util.RenderUtils;
 import software.bernie.geckolib3.geo.render.built.*;
 

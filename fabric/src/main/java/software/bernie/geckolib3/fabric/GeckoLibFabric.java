@@ -12,7 +12,7 @@ import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
 import software.bernie.geckolib3.GeckoLibCommon;
-import software.bernie.geckolib3.fabric.resource.GeckoLibCache;
+import software.bernie.geckolib3.resource.GeckoLibCache;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;

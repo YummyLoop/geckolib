@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.model;
+package software.bernie.geckolib3.model;
 
 import com.eliotlash.molang.MolangParser;
 import net.minecraft.client.MinecraftClient;
@@ -8,7 +8,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
-import software.bernie.geckolib3.fabric.model.provider.GeoModelProvider;
+import software.bernie.geckolib3.model.provider.GeoModelProvider;
 import software.bernie.geckolib3.model.provider.IAnimatableModelProvider;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.IAnimatableModel;
@@ -20,7 +20,7 @@ import software.bernie.geckolib3.core.processor.IBone;
 import software.bernie.geckolib3.geo.exception.GeoModelException;
 import software.bernie.geckolib3.geo.render.built.GeoBone;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
-import software.bernie.geckolib3.fabric.resource.GeckoLibCache;
+import software.bernie.geckolib3.resource.GeckoLibCache;
 import software.bernie.geckolib3.util.MolangUtils;
 
 import java.util.Collections;

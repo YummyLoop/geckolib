@@ -2,7 +2,7 @@ package software.bernie.example.client.model.entity;
 
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.GeckoLibCommon;
-import software.bernie.geckolib3.fabric.model.AnimatedGeoModel;
+import software.bernie.geckolib3.model.AnimatedGeoModel;
 
 public class BikeModel extends AnimatedGeoModel {
 	@Override

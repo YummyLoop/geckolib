@@ -3,14 +3,14 @@
  * Author: Bernie G. (Gecko)
  */
 
-package software.bernie.geckolib3.fabric.util;
+package software.bernie.geckolib3.util;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.entity.Entity;
-import software.bernie.geckolib3.fabric.model.provider.GeoModelProvider;
-import software.bernie.geckolib3.fabric.renderer.geo.IGeoRenderer;
+import software.bernie.geckolib3.model.provider.GeoModelProvider;
+import software.bernie.geckolib3.renderer.geo.IGeoRenderer;
 
 public class AnimationUtils {
 	public static double convertTicksToSeconds(double ticks) {

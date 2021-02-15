@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.renderer.geo;
+package software.bernie.geckolib3.renderer.geo;
 
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
@@ -9,7 +9,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.Identifier;
-import software.bernie.geckolib3.fabric.model.provider.GeoModelProvider;
+import software.bernie.geckolib3.model.provider.GeoModelProvider;
 import software.bernie.geckolib3.core.IAnimatable;
 
 public abstract class GeoLayerRenderer<T extends Entity & IAnimatable> {

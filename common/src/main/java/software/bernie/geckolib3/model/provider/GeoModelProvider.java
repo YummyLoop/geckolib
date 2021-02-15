@@ -1,8 +1,8 @@
-package software.bernie.geckolib3.fabric.model.provider;
+package software.bernie.geckolib3.model.provider;
 
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
-import software.bernie.geckolib3.fabric.resource.GeckoLibCache;
+import software.bernie.geckolib3.resource.GeckoLibCache;
 
 public abstract class GeoModelProvider<T> {
 	public double seekTime;

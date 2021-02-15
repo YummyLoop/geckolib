@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.file;
+package software.bernie.geckolib3.file;
 
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;

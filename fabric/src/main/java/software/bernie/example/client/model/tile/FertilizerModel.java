@@ -7,7 +7,7 @@ package software.bernie.example.client.model.tile;
 import net.minecraft.util.Identifier;
 import software.bernie.example.block.tile.FertilizerTileEntity;
 import software.bernie.geckolib3.GeckoLibCommon;
-import software.bernie.geckolib3.fabric.model.AnimatedGeoModel;
+import software.bernie.geckolib3.model.AnimatedGeoModel;
 
 public class FertilizerModel extends AnimatedGeoModel<FertilizerTileEntity> {
 	@Override

@@ -8,7 +8,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import software.bernie.example.block.tile.BotariumTileEntity;
 import software.bernie.example.client.model.tile.BotariumModel;
-import software.bernie.geckolib3.fabric.renderer.geo.GeoBlockRenderer;
+import software.bernie.geckolib3.renderer.geo.GeoBlockRenderer;
 
 public class BotariumTileRenderer extends GeoBlockRenderer<BotariumTileEntity> {
 	public BotariumTileRenderer(BlockEntityRenderDispatcher rendererDispatcherIn) {

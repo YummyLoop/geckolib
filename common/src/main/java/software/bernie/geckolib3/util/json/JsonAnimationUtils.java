@@ -3,14 +3,14 @@
  * Author: Bernie G. (Gecko)
  */
 
-package software.bernie.geckolib3.fabric.util.json;
+package software.bernie.geckolib3.util.json;
 
 import com.eliotlash.mclib.math.IValue;
 import com.eliotlash.molang.MolangParser;
 import com.google.common.collect.ImmutableSet;
 import com.google.gson.*;
 import net.minecraft.client.gl.ShaderParseException;
-import software.bernie.geckolib3.fabric.util.AnimationUtils;
+import software.bernie.geckolib3.util.AnimationUtils;
 import software.bernie.geckolib3.core.builder.Animation;
 import software.bernie.geckolib3.core.keyframe.BoneAnimation;
 import software.bernie.geckolib3.core.keyframe.EventKeyFrame;

@@ -3,7 +3,7 @@
  * Author: Bernie G. (Gecko)
  */
 
-package software.bernie.geckolib3.fabric.util.json;
+package software.bernie.geckolib3.util.json;
 
 import com.eliotlash.mclib.math.IValue;
 import com.eliotlash.molang.MolangException;
@@ -17,7 +17,7 @@ import software.bernie.geckolib3.core.ConstantValue;
 import software.bernie.geckolib3.core.easing.EasingType;
 import software.bernie.geckolib3.core.keyframe.KeyFrame;
 import software.bernie.geckolib3.core.keyframe.VectorKeyFrameList;
-import software.bernie.geckolib3.fabric.util.AnimationUtils;
+import software.bernie.geckolib3.util.AnimationUtils;
 
 import java.util.ArrayList;
 import java.util.List;

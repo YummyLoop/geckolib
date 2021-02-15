@@ -14,10 +14,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
-import software.bernie.geckolib3.fabric.model.AnimatedGeoModel;
+import software.bernie.geckolib3.model.AnimatedGeoModel;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
+import software.bernie.geckolib3.renderer.geo.IGeoRenderer;
 
 import java.awt.*;
 import java.util.Collections;

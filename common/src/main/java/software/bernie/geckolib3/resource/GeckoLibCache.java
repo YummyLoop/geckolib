@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.resource;
+package software.bernie.geckolib3.resource;
 
 import com.eliotlash.molang.MolangParser;
 import net.minecraft.resource.ResourceManager;
@@ -7,8 +7,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
 import org.apache.commons.lang3.ArrayUtils;
 import software.bernie.geckolib3.GeckoLibCommon;
-import software.bernie.geckolib3.fabric.file.AnimationFileLoader;
-import software.bernie.geckolib3.fabric.file.GeoModelLoader;
+import software.bernie.geckolib3.file.AnimationFileLoader;
+import software.bernie.geckolib3.file.GeoModelLoader;
 import software.bernie.geckolib3.file.AnimationFile;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.molang.MolangRegistrar;
