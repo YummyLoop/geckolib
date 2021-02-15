@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.geo.render.built;
+package software.bernie.geckolib3.geo.render.built;
 
 import software.bernie.geckolib3.geo.raw.pojo.ModelProperties;
 

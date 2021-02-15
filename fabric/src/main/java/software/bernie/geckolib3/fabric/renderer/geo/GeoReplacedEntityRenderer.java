@@ -27,7 +27,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.MathHelper;
 import software.bernie.geckolib3.fabric.compat.PatchouliCompat;
-import software.bernie.geckolib3.fabric.geo.render.built.GeoModel;
+import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.fabric.model.AnimatedGeoModel;
 import software.bernie.geckolib3.fabric.model.provider.data.EntityModelData;
 import software.bernie.geckolib3.core.IAnimatable;

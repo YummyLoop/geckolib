@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.geo.render;
+package software.bernie.geckolib3.geo.render;
 
 import net.minecraft.client.util.math.Vector3f;
 import org.apache.commons.lang3.ArrayUtils;
@@ -7,9 +7,9 @@ import software.bernie.geckolib3.geo.raw.pojo.Cube;
 import software.bernie.geckolib3.geo.raw.pojo.ModelProperties;
 import software.bernie.geckolib3.geo.raw.tree.RawBoneGroup;
 import software.bernie.geckolib3.geo.raw.tree.RawGeometryTree;
-import software.bernie.geckolib3.fabric.geo.render.built.GeoBone;
-import software.bernie.geckolib3.fabric.geo.render.built.GeoCube;
-import software.bernie.geckolib3.fabric.geo.render.built.GeoModel;
+import software.bernie.geckolib3.geo.render.built.GeoBone;
+import software.bernie.geckolib3.geo.render.built.GeoCube;
+import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.util.VectorUtils;
 
 public class GeoBuilder {

@@ -1,7 +1,7 @@
 package software.bernie.geckolib3.fabric.model.provider;
 
 import net.minecraft.util.Identifier;
-import software.bernie.geckolib3.fabric.geo.render.built.GeoModel;
+import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.fabric.resource.GeckoLibCache;
 
 public abstract class GeoModelProvider<T> {

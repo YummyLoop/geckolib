@@ -14,7 +14,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.client.util.math.Vector3f;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
-import software.bernie.geckolib3.fabric.geo.render.built.GeoModel;
+import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.fabric.model.AnimatedGeoModel;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.controller.AnimationController;

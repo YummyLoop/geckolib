@@ -14,7 +14,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.fabric.compat.PatchouliCompat;
-import software.bernie.geckolib3.fabric.geo.render.built.GeoModel;
+import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.fabric.model.AnimatedGeoModel;
 import software.bernie.geckolib3.util.GeoUtils;
 import software.bernie.geckolib3.core.IAnimatable;

@@ -9,16 +9,16 @@ import net.minecraft.client.util.math.Vector4f;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Matrix3f;
 import net.minecraft.util.math.Matrix4f;
-import software.bernie.geckolib3.fabric.geo.render.built.*;
 import software.bernie.geckolib3.fabric.model.provider.GeoModelProvider;
 import software.bernie.geckolib3.fabric.util.RenderUtils;
+import software.bernie.geckolib3.geo.render.built.*;
 
 import java.awt.*;
 
 public interface IGeoRenderer<T> {
 	default void render(GeoModel model, T animatable, float partialTicks, RenderLayer type, MatrixStack matrixStackIn,
-                        VertexConsumerProvider renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn,
-                        int packedOverlayIn, float red, float green, float blue, float alpha) {
+						VertexConsumerProvider renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn,
+						int packedOverlayIn, float red, float green, float blue, float alpha) {
 		renderEarly(animatable, matrixStackIn, partialTicks, renderTypeBuffer, vertexBuilder, packedLightIn,
 				packedOverlayIn, red, green, blue, alpha);
 

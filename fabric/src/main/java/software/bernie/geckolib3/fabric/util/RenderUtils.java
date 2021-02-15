@@ -3,8 +3,8 @@ package software.bernie.geckolib3.fabric.util;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.client.util.math.Vector3f;
 import net.minecraft.util.math.Quaternion;
-import software.bernie.geckolib3.fabric.geo.render.built.GeoBone;
-import software.bernie.geckolib3.fabric.geo.render.built.GeoCube;
+import software.bernie.geckolib3.geo.render.built.GeoBone;
+import software.bernie.geckolib3.geo.render.built.GeoCube;
 
 public class RenderUtils {
 	public static void moveToPivot(GeoCube cube, MatrixStack stack) {

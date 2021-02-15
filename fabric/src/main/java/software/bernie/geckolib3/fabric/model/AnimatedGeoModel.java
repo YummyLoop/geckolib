@@ -18,8 +18,8 @@ import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.processor.AnimationProcessor;
 import software.bernie.geckolib3.core.processor.IBone;
 import software.bernie.geckolib3.geo.exception.GeoModelException;
-import software.bernie.geckolib3.fabric.geo.render.built.GeoBone;
-import software.bernie.geckolib3.fabric.geo.render.built.GeoModel;
+import software.bernie.geckolib3.geo.render.built.GeoBone;
+import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.fabric.resource.GeckoLibCache;
 import software.bernie.geckolib3.util.MolangUtils;
 

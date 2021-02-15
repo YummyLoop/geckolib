@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.geo.render.built;
+package software.bernie.geckolib3.geo.render.built;
 
 import net.minecraft.client.util.math.Vector3f;
 import org.apache.commons.lang3.ArrayUtils;
