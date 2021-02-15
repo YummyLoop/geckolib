@@ -2,7 +2,7 @@ package software.bernie.geckolib3.fabric.resource;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.resource.ReloadableResourceManager;
-import software.bernie.geckolib3.fabric.GeckoLib;
+import software.bernie.geckolib3.GeckoLibCommon;
 
 public class ResourceListener {
 	public static void registerReloadListener() {
@@ -15,7 +15,7 @@ public class ResourceListener {
 					.getResourceManager();
 			reloadable.registerListener(GeckoLibCache.getInstance()::resourceReload);
 		} else {
-			GeckoLib.LOGGER.warn(
+			GeckoLibCommon.LOGGER.warn(
 					"Minecraft.getInstance() was null, could not register reload listeners. Ignore if datagenning.");
 		}
 	}

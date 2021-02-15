@@ -11,8 +11,6 @@ import net.minecraft.resource.ResourceManager;
 import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import software.bernie.geckolib3.GeckoLibCommon;
 import software.bernie.geckolib3.fabric.resource.GeckoLibCache;
 
@@ -20,7 +18,6 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
 public class GeckoLib {
-	public static final Logger LOGGER = LogManager.getLogger();
 	public static final String ModID = "geckolib3";
 	public static boolean hasInitialized;
 
