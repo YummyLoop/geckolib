@@ -19,4 +19,4 @@ include("common")
 include("fabric")
 include("forge")
 
-rootProject.name = 'gecholib'
+rootProject.name = 'geckolib'
