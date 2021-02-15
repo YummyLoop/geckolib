@@ -19,7 +19,7 @@ import software.bernie.geckolib3.core.event.SoundKeyframeEvent;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.util.GeckoLibUtil;
+import software.bernie.geckolib3.fabric.util.GeckoLibUtil;
 
 public class JackInTheBoxItem extends Item implements IAnimatable {
 	public AnimationFactory factory = new AnimationFactory(this);

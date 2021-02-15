@@ -2,8 +2,8 @@ package software.bernie.example.client.model.armor;
 
 import net.minecraft.util.Identifier;
 import software.bernie.example.item.PotatoArmorItem;
-import software.bernie.geckolib3.GeckoLib;
-import software.bernie.geckolib3.model.AnimatedGeoModel;
+import software.bernie.geckolib3.fabric.GeckoLib;
+import software.bernie.geckolib3.fabric.model.AnimatedGeoModel;
 
 public class PotatoArmorModel extends AnimatedGeoModel<PotatoArmorItem> {
 	@Override

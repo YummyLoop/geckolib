@@ -13,7 +13,7 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.util.Identifier;
 import software.bernie.example.entity.BikeEntity;
 import software.bernie.example.entity.GeoExampleEntity;
-import software.bernie.geckolib3.GeckoLib;
+import software.bernie.geckolib3.fabric.GeckoLib;
 
 public class EntityRegistry {
 	public static final EntityType<GeoExampleEntity> GEO_EXAMPLE_ENTITY = buildEntity(GeoExampleEntity::new,
