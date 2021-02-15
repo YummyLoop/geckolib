@@ -12,6 +12,11 @@ architectury {
     platformSetupLoomIde()
 }
 
+loom {
+    mixinConfig "fabric.mixins.json"
+    mixinConfigs = ["fabric.mixins.json"]
+}
+
 apply from: "${rootDir}/repositories.gradle"
 apply from: "${rootProject.project("common").projectDir}/shadow.gradle"
 

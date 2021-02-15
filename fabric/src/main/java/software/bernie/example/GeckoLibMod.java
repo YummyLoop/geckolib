@@ -18,7 +18,7 @@ import software.bernie.example.registry.ItemRegistry;
 import software.bernie.example.registry.SoundRegistry;
 import software.bernie.example.registry.TileRegistry;
 import software.bernie.geckolib3.GeckoLibCommon;
-import software.bernie.geckolib3.fabric.GeckoLibFabric;
+import software.bernie.geckolib3.fabric.GeckoLib;
 
 public class GeckoLibMod implements ModInitializer {
 	public static boolean DISABLE_IN_DEV = false;
@@ -27,7 +27,7 @@ public class GeckoLibMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		GeckoLibFabric.initialize();
+		GeckoLib.initialize();
 		if (isDevelopmentEnvironment && !GeckoLibMod.DISABLE_IN_DEV) {
 			new EntityRegistry();
 			FabricDefaultAttributeRegistry.register(EntityRegistry.GEO_EXAMPLE_ENTITY,

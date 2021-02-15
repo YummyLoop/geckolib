@@ -12,8 +12,6 @@ subprojects {
 
     loom {
         silentMojangMappingsLicense()
-        mixinConfig "fabric.mixins.json"
-        mixinConfigs = ["fabric.mixins.json"]
     }
 
     dependencies {

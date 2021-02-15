@@ -7,7 +7,4 @@ public class GeckoLibCommon {
     public static final String ModID = "geckolib3";
     public static final Logger LOGGER = LogManager.getLogger();
     public static boolean hasInitialized;
-
-    public static void init() {}
-
 }

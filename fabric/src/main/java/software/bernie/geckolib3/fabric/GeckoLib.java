@@ -17,9 +17,8 @@ import software.bernie.geckolib3.resource.GeckoLibCache;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
-public class GeckoLibFabric {
+public class GeckoLib {
 	public static void initialize() {
-		GeckoLibCommon.init();
 		if (!GeckoLibCommon.hasInitialized) {
 			ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES)
 					.registerReloadListener(new IdentifiableResourceReloadListener() {
