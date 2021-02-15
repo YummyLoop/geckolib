@@ -8,4 +8,6 @@ repositories {
     maven { url 'https://maven.blamejared.com' }
     maven { url 'https://www.cursemaven.com' }
     maven { url 'https://plugins.gradle.org/m2/' }
+    maven { url "https://dvs1.progwml6.com/files/maven/" }
+    maven { url "https://modmaven.k-4u.nl" }
 }

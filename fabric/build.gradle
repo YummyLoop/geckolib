@@ -59,6 +59,11 @@ dependencies {
     shadow(project(path: ":common", configuration: "transformProductionFabric")) {
         transitive = false
     }
+
+    // Extra stuff
+    modImplementation "com.terraformersmc:modmenu:${rootProject.fabric_mod_ModMenu}"
+    modCompileOnly ("me.shedaniel:RoughlyEnoughItems-api:${rootProject.fabric_mod_REI}")
+    modRuntime ("me.shedaniel:RoughlyEnoughItems:${rootProject.fabric_mod_REI}")
 }
 
 processResources {
