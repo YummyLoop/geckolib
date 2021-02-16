@@ -6,11 +6,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import software.bernie.example.block.BotariumBlock;
 import software.bernie.example.block.FertilizerBlock;
-import software.bernie.geckolib3.GeckoLibCommon;
+import software.bernie.geckolib3.GeckoLib;
 
 public class BlockRegistry {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
-			GeckoLibCommon.ModID);
+			GeckoLib.ModID);
 
 	public static final RegistryObject<BotariumBlock> BOTARIUM_BLOCK = BLOCKS.register("botariumblock",
 			BotariumBlock::new);

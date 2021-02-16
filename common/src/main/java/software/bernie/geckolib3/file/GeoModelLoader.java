@@ -2,7 +2,7 @@ package software.bernie.geckolib3.file;
 
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
-import software.bernie.geckolib3.GeckoLibCommon;
+import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.geo.exception.GeoModelException;
 import software.bernie.geckolib3.geo.raw.pojo.Converter;
 import software.bernie.geckolib3.geo.raw.pojo.FormatVersion;
@@ -29,7 +29,7 @@ public class GeoModelLoader {
 			// rendered GeoModel
 			return GeoBuilder.constructGeoModel(rawGeometryTree);
 		} catch (Exception e) {
-			GeckoLibCommon.LOGGER.error(String.format("Error parsing %S", location), e);
+			GeckoLib.LOGGER.error(String.format("Error parsing %S", location), e);
 			throw (new RuntimeException(e));
 		}
 	}

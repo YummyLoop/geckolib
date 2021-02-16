@@ -13,11 +13,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import software.bernie.example.entity.BikeEntity;
 import software.bernie.example.entity.GeoExampleEntity;
-import software.bernie.geckolib3.GeckoLibCommon;
+import software.bernie.geckolib3.GeckoLib;
 
 public class EntityRegistry {
 	public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES,
-			GeckoLibCommon.ModID);
+			GeckoLib.ModID);
 
 	public static final RegistryObject<EntityType<GeoExampleEntity>> GEO_EXAMPLE_ENTITY = buildEntity(
 			GeoExampleEntity::new, GeoExampleEntity.class, .7F, 1.3F);

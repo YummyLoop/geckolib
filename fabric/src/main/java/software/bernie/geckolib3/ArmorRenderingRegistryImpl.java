@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric;
+package software.bernie.geckolib3;
 
 import net.fabricmc.fabric.api.client.rendering.v1.ArmorRenderingRegistry;
 import net.fabricmc.fabric.impl.client.rendering.ArmorProviderExtensions;

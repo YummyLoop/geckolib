@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.forge.renderer.geo;
+package software.bernie.geckolib3.renderer.geo;
 
 import java.awt.Color;
 import java.util.Collections;
@@ -25,7 +25,6 @@ import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
-import software.bernie.geckolib3.renderer.geo.IGeoRenderer;
 
 public abstract class GeoItemRenderer<T extends Item & IAnimatable> extends BuiltinModelItemRenderer
 		implements IGeoRenderer<T> {

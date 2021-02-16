@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.mixins.fabric;
+package software.bernie.geckolib3.mixins.fabric;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -22,7 +22,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
-import software.bernie.geckolib3.fabric.ArmorRenderingRegistryImpl;
+import software.bernie.geckolib3.ArmorRenderingRegistryImpl;
 
 import java.util.Map;
 import java.util.Objects;

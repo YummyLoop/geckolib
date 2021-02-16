@@ -29,11 +29,11 @@ import software.bernie.example.item.PotatoArmorItem;
 import software.bernie.example.registry.BlockRegistry;
 import software.bernie.example.registry.EntityRegistry;
 import software.bernie.example.registry.TileRegistry;
-import software.bernie.geckolib3.GeckoLibCommon;
+import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.renderer.geo.GeoArmorRenderer;
 import software.bernie.geckolib3.renderer.geo.GeoReplacedEntityRenderer;
 
-@Mod.EventBusSubscriber(modid = GeckoLibCommon.ModID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = GeckoLib.ModID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ClientListener {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent

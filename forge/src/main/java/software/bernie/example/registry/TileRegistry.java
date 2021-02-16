@@ -6,11 +6,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import software.bernie.example.block.tile.BotariumTileEntity;
 import software.bernie.example.block.tile.FertilizerTileEntity;
-import software.bernie.geckolib3.GeckoLibCommon;
+import software.bernie.geckolib3.GeckoLib;
 
 public class TileRegistry {
 	public static final DeferredRegister<BlockEntityType<?>> TILES = DeferredRegister
-			.create(ForgeRegistries.TILE_ENTITIES, GeckoLibCommon.ModID);
+			.create(ForgeRegistries.TILE_ENTITIES, GeckoLib.ModID);
 
 	public static final RegistryObject<BlockEntityType<BotariumTileEntity>> BOTARIUM_TILE = TILES
 			.register("botariumtile", () -> BlockEntityType.Builder

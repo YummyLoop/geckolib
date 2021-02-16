@@ -12,11 +12,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import software.bernie.example.registry.*;
-import software.bernie.geckolib3.GeckoLibCommon;
-import software.bernie.geckolib3.forge.GeckoLib;
+import software.bernie.geckolib3.GeckoLib;
 
 
-@Mod(GeckoLibCommon.ModID)
+@Mod(GeckoLib.ModID)
 public class GeckoLibMod {
 	public static ItemGroup geckolibItemGroup;
 	public static boolean DISABLE_IN_DEV = false;

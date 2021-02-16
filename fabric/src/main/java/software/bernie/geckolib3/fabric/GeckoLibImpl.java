@@ -11,20 +11,20 @@ import net.minecraft.resource.ResourceManager;
 import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
-import software.bernie.geckolib3.GeckoLibCommon;
+import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.resource.GeckoLibCache;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
-public class GeckoLib {
+public class GeckoLibImpl {
 	public static void initialize() {
-		if (!GeckoLibCommon.hasInitialized) {
+		if (!GeckoLib.hasInitialized) {
 			ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES)
 					.registerReloadListener(new IdentifiableResourceReloadListener() {
 						@Override
 						public Identifier getFabricId() {
-							return new Identifier(GeckoLibCommon.ModID, "models");
+							return new Identifier(GeckoLib.ModID, "models");
 						}
 
 						@Override
@@ -36,6 +36,6 @@ public class GeckoLib {
 						}
 					});
 		}
-		GeckoLibCommon.hasInitialized = true;
+		GeckoLib.hasInitialized = true;
 	}
 }

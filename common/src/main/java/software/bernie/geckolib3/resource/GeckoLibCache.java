@@ -6,7 +6,7 @@ import net.minecraft.resource.ResourceReloadListener;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
 import org.apache.commons.lang3.ArrayUtils;
-import software.bernie.geckolib3.GeckoLibCommon;
+import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.file.AnimationFileLoader;
 import software.bernie.geckolib3.file.GeoModelLoader;
 import software.bernie.geckolib3.file.AnimationFile;
@@ -26,14 +26,14 @@ public class GeckoLibCache {
 	private final GeoModelLoader modelLoader;
 
 	public ConcurrentHashMap<Identifier, AnimationFile> getAnimations() {
-		if (!GeckoLibCommon.hasInitialized) {
+		if (!GeckoLib.hasInitialized) {
 			throw new RuntimeException("GeckoLib was never initialized! Please read the documentation!");
 		}
 		return animations;
 	}
 
 	public ConcurrentHashMap<Identifier, GeoModel> getGeoModels() {
-		if (!GeckoLibCommon.hasInitialized) {
+		if (!GeckoLib.hasInitialized) {
 			throw new RuntimeException("GeckoLib was never initialized! Please read the documentation!");
 		}
 		return geoModels;

@@ -1,4 +1,4 @@
-package software.bernie.geckolib3.fabric.renderer.geo;
+package software.bernie.geckolib3.renderer.geo;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
@@ -18,7 +18,6 @@ import software.bernie.geckolib3.model.AnimatedGeoModel;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.renderer.geo.IGeoRenderer;
 
 import java.awt.*;
 import java.util.Collections;

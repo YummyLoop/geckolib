@@ -9,7 +9,7 @@ import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
 import org.apache.commons.io.IOUtils;
-import software.bernie.geckolib3.GeckoLibCommon;
+import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.core.builder.Animation;
 import software.bernie.geckolib3.util.json.JsonAnimationUtils;
 
@@ -32,7 +32,7 @@ public class AnimationFileLoader {
 						JsonAnimationUtils.getAnimation(jsonRepresentation, animationName), parser);
 				animationFile.putAnimation(animationName, animation);
 			} catch (ShaderParseException e) {
-				GeckoLibCommon.LOGGER.error("Could not load animation: {}", animationName, e);
+				GeckoLib.LOGGER.error("Could not load animation: {}", animationName, e);
 				throw new RuntimeException(e);
 			}
 		}
@@ -53,7 +53,7 @@ public class AnimationFileLoader {
 			return IOUtils.toString(inputStream);
 		} catch (Exception e) {
 			String message = "Couldn't load " + location;
-			GeckoLibCommon.LOGGER.error(message, e);
+			GeckoLib.LOGGER.error(message, e);
 			throw new RuntimeException(new FileNotFoundException(location.toString()));
 		}
 	}

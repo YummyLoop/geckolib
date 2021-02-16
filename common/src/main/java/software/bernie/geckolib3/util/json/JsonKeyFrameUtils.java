@@ -12,7 +12,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import org.apache.commons.lang3.math.NumberUtils;
-import software.bernie.geckolib3.GeckoLibCommon;
+import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.core.ConstantValue;
 import software.bernie.geckolib3.core.easing.EasingType;
 import software.bernie.geckolib3.core.keyframe.KeyFrame;
@@ -130,7 +130,7 @@ public class JsonKeyFrameUtils {
 			EasingType easing = EasingType.valueOf(uppercaseEasingString);
 			return easing;
 		} catch (Exception e) {
-			GeckoLibCommon.LOGGER.fatal("Unknown easing type: {}", easingString);
+			GeckoLib.LOGGER.fatal("Unknown easing type: {}", easingString);
 			throw new RuntimeException(e);
 		}
 	}

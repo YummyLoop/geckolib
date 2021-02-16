@@ -1,7 +1,7 @@
-package software.bernie.geckolib3.fabric.compat;
+package software.bernie.geckolib3.compat;
+
 
 import com.mojang.blaze3d.systems.RenderSystem;
-
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.DiffuseLighting;
 import net.minecraft.client.render.VertexConsumerProvider;
