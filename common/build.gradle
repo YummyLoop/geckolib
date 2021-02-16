@@ -1,7 +1,3 @@
-plugins {
-    id 'com.github.johnrengelman.shadow'
-}
-
 apply from: "${rootDir}/repositories.gradle"
 apply from: "${rootProject.project("common").projectDir}/shadow.gradle"
 
@@ -17,7 +13,7 @@ dependencies {
     implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.9.0'
     implementation 'com.eliotlash.molang:molang:SNAPSHOT.12'
     implementation 'com.eliotlash.mclib:mclib:SNAPSHOT.12'
-    
+
     // Extra dependencies
 
 }

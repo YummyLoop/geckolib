@@ -1,6 +1,9 @@
 plugins {
     id "architectury-plugin"
     id "forgified-fabric-loom" apply false
+    id 'com.github.johnrengelman.shadow'
+    id 'com.matthewprenger.cursegradle'
+    id 'maven-publish'
 }
 
 architectury {
@@ -9,6 +12,8 @@ architectury {
 
 subprojects {
     apply plugin: "forgified-fabric-loom"
+    apply plugin: 'com.github.johnrengelman.shadow'
+    apply plugin: 'maven-publish'
 
     loom {
         silentMojangMappingsLicense()
@@ -20,6 +25,7 @@ subprojects {
         //mappings loom.officialMojangMappings()
         mappings "net.fabricmc:yarn:${rootProject.yarn_mappings}:v2"
     }
+
 }
 
 allprojects {
@@ -59,6 +65,92 @@ allprojects {
                     "Implementation-Vendor"   : "Gecko",
                     "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
             ])
+        }
+    }
+}
+
+import groovy.json.JsonOutput
+import groovy.json.JsonSlurper
+processResources {
+    doLast {
+        def jsonMinifyStart = System.currentTimeMillis()
+        def jsonMinified = 0
+        def jsonBytesSaved = 0
+        fileTree(dir: outputs.files.asPath, include: '**/*.json').each {
+            File file = it
+            jsonMinified++
+            def oldLength = file.length()
+            file.text = JsonOutput.toJson(new JsonSlurper().parse(file))
+            jsonBytesSaved += oldLength - file.length()
+        }
+        println('Minified ' + jsonMinified + ' json files. Saved ' + jsonBytesSaved + ' bytes. Took ' + (System.currentTimeMillis() - jsonMinifyStart) + 'ms.')
+    }
+}
+
+
+artifacts {
+    archives shadowJar
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifact shadowJar
+            artifact sourcesJar
+            artifactId = project.archives_base_name
+        }
+    }
+    repositories {
+        maven {
+            url "file:///${project.projectDir}/mcmodsrepo"
+        }
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+            url repsyUrl
+            credentials {
+                def envUsername = System.getenv("repsyUsername")
+                def envPassword = System.getenv("repsyPassword")
+                username = envUsername == null ? findProperty("repsyUsername") : envUsername
+                password = envPassword == null ? findProperty("repsyPassword") : envPassword
+            }
+        }
+    }
+}
+
+if (file('key.properties').exists()) {
+    curseforge {
+
+        def curseProp = new Properties()
+        File secretPropsFile = file("key.properties")
+        curseProp.load(secretPropsFile.newInputStream())
+
+        project {
+            apiKey = curseProp.getProperty('curseKey')
+            id = "398667"
+            releaseType = "release"
+            changelogType = 'text'
+            changelog = file('changelog.txt')
+            addGameVersion("1.16.4")
+            addGameVersion("1.16.5")
+            addGameVersion("Fabric")
+            addGameVersion("Java 8")
+
+            relations {
+                requiredDependency 'fabric-api'
+            }
+            mainArtifact(remapJar)
+
+            afterEvaluate {
+                uploadTask.dependsOn("remapJar")
+            }
+        }
+        options {
+            //debug = true
+            forgeGradleIntegration = false
         }
     }
 }
