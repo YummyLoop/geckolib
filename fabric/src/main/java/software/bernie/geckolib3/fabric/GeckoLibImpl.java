@@ -7,11 +7,13 @@ package software.bernie.geckolib3.fabric;
 
 import net.fabricmc.fabric.api.resource.IdentifiableResourceReloadListener;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
 import software.bernie.geckolib3.GeckoLib;
+import software.bernie.geckolib3.compat.PatchouliCompat;
 import software.bernie.geckolib3.resource.GeckoLibCache;
 
 import java.util.concurrent.CompletableFuture;
@@ -37,5 +39,9 @@ public class GeckoLibImpl {
 					});
 		}
 		GeckoLib.hasInitialized = true;
+	}
+
+	public static void iniPatchouli(MatrixStack stack){
+		PatchouliCompat.patchouliLoaded(stack);
 	}
 }

@@ -1,8 +1,10 @@
 package software.bernie.geckolib3.forge;
 
+import net.minecraft.client.util.math.MatrixStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.DistExecutor;
 import software.bernie.geckolib3.GeckoLib;
+import software.bernie.geckolib3.compat.PatchouliCompat;
 import software.bernie.geckolib3.resource.ResourceListener;
 
 public class GeckoLibImpl {
@@ -18,4 +20,6 @@ public class GeckoLibImpl {
 		}
 		GeckoLib.hasInitialized = true;
 	}
+
+	public static void iniPatchouli(MatrixStack stack){ PatchouliCompat.patchouliLoaded(stack); }
 }

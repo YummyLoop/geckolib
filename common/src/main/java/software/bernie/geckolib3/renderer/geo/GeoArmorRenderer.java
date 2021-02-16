@@ -13,7 +13,7 @@ import net.minecraft.entity.decoration.ArmorStandEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
-import software.bernie.geckolib3.ModCompat;
+import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 import software.bernie.geckolib3.util.GeoUtils;
@@ -126,7 +126,7 @@ public abstract class GeoArmorRenderer<T extends ArmorItem & IAnimatable> extend
 				OverlayTexture.DEFAULT_UV, (float) renderColor.getRed() / 255f, (float) renderColor.getGreen() / 255f,
 				(float) renderColor.getBlue() / 255f, (float) renderColor.getAlpha() / 255);
 		if (Platform.isModLoaded("patchouli")) {
-			ModCompat.iniPatchouli(stack);
+			GeckoLib.iniPatchouli(stack);
 		}
 		stack.pop();
 		stack.scale(-1.0F, -1.0F, 1.0F);

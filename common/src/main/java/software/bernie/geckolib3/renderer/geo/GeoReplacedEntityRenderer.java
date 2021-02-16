@@ -19,7 +19,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.MathHelper;
-import software.bernie.geckolib3.ModCompat;
+import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.IAnimatableModel;
 import software.bernie.geckolib3.core.controller.AnimationController;
@@ -160,7 +160,7 @@ public abstract class GeoReplacedEntityRenderer<T extends IAnimatable> extends E
             }
         }
         if (Platform.isModLoaded("patchouli")) {
-            ModCompat.iniPatchouli(stack);
+            GeckoLib.iniPatchouli(stack);
         }
         stack.pop();
         super.render(entity, entityYaw, partialTicks, stack, bufferIn, packedLightIn);
